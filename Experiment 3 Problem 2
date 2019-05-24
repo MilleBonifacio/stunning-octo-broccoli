@@ -1,0 +1,40 @@
+// Bonifacio, Mille Jeremie N.
+// Experiment 3 Problem 2
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+const int province = 3;
+const int day = 7;
+
+int main()
+{
+    int temperature[province][day];
+
+    cout << "Enter Temperature for Provinces A, B and C. \n" ;
+
+    for (int a = 0; a < province; ++a)
+    {
+        for(int b = 0; b < day; ++b)
+        {
+            cout << "Province " << a + 1 << ", Day " << b + 1 << " : ";
+            cin >> temperature[a][b];
+        }
+    }
+
+    cout << "\n";
+    cout << "\n";
+    cout << "Temperature: " << endl;
+
+    
+    for (int a = 0; a < province; ++a)
+    {
+        for(int b = 0; b < day; ++b)
+        {
+            cout << "Province  = " << a + 1 << ", Day " << b + 1 << " = " << temperature[a][b] << endl;
+        }
+    }
+    _getch();
+    return 0;
+}
